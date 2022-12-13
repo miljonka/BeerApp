@@ -26,9 +26,9 @@ public class MuutaServlet extends HttpServlet {
 		String idStr = request.getParameter("olut_id");
 		int id = Integer.parseInt(idStr);
 		OlutDao olutdao = new OlutJdbcDao();
-		Olut olut = olutdao.muutaOlut(id); //Luodaan olut olio id perusteella
+		Olut olut = olutdao.muutaOlut(id); //Luodaan olut olio sen id:n perusteella
 		
-		request.setAttribute("olut", olut); //lista lähtee oluenmuokkauslomakkeelle
+		request.setAttribute("olut", olut); //olut lähtee oluenmuokkauslomakkeelle
 		request.getRequestDispatcher("/WEB-INF/oluenmuokkauslomake.jsp").forward(request, response);
 		
 			
