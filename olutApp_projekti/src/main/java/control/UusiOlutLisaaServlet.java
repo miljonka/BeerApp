@@ -27,7 +27,7 @@ public class UusiOlutLisaaServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 	try {
-		//Luodaan uusi olutolio lomakkeen avulla
+		//Pyydetään tietoja olutolion luomista varten lomakkeen avulla
 		String nimi = request.getParameter("nimi");
 		String maa = request.getParameter("maa");
 		String tyyppi = request.getParameter("tyyppi");
@@ -55,11 +55,6 @@ public class UusiOlutLisaaServlet extends HttpServlet {
 	} catch (NumberFormatException e) {
 		
 		e.printStackTrace();  // tulostetaan Consoleen virhetilanteessa metodikutsupinoa, josta näkee rivinumeron, jossa Exception tapahtuu
-		PrintWriter viesti = response.getWriter();
-		
-		viesti.println("<script type=\"text/javascript\">");
-		viesti.println("alert('nope');");
-		viesti.println("</script>");
 		request.setAttribute("viesti", "Sovelluksessa tapahtui virhe");
 		request.setAttribute("viesti", "Olut-lomakkeella syötetyt tiedot eivät olleet kelvolliset.");
 		// servlet kutsuu jsp:tä
