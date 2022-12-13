@@ -1,0 +1,132 @@
+
+  
+
+
+@import 'https://fonts.googleapis.com/css?family=Quicksand:300,400,700';
+
+body {
+  padding: 0 5em;
+  font-family: Quicksand, sans-serif;
+  color: #444;
+  background: #eee;
+  
+}
+
+h1 {
+  padding: 3px;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #274e4e;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  
+}
+td, tr
+{
+text-align: center;
+
+}
+
+.table {
+  background: #022e31;
+  color: #fff;
+  border-radius: .5em;
+  margin: 4px;
+ 
+ 
+}
+ a{
+ color: #ffffff;
+ 
+ }
+ a:hover
+ {
+ color:#ddd;
+ text-decoration: none;
+
+ }
+
+
+.button1 {
+
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #053f43;
+  
+  border: none;
+  margin-left: 4px;
+  text-align: center;
+  font-size: 18px;
+  padding: 0px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+  text-decoration: none;
+  margin-right: 130px;
+}
+.button1:hover{
+	background-color:  #032d30;
+	
+	
+}
+
+
+* {box-sizing: border-box;}
+
+.topnav a.active {
+  background-color: #0b919b;
+  color: white;
+}
+
+.topnav .search-container {
+  float: left;
+}
+
+.topnav input[type=text] {
+  padding: 15px;
+  margin-left: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  border: block;
+}
+
+.topnav .search-container button {
+  float: rigth;
+  padding: 8px 8px;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 20px;
+  background: #eee;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+p
+{
+margin-top: 15px;
+}
+

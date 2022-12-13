@@ -1,0 +1,18 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand:300,400,700';
+
+
+
+h1 {
+  font-family: Quicksand, sans-serif;
+  padding: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #34495E;
+}
+p
+{
+
+  font-family: Quicksand, sans-serif;
+  color: #444;
+  text-align: center;
+}

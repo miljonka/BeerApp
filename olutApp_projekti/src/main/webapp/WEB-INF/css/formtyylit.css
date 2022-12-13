@@ -1,0 +1,61 @@
+/* this stylesheet is only used for verifying that serving static files works */
+@import 'https://fonts.googleapis.com/css?family=Quicksand:300,400,700';
+
+body {
+  padding: 0 5em;
+  font-family: Quicksand, sans-serif;
+  color: #444;
+  background: #ddd;
+}
+
+h1 {
+  padding: 20px;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #274e4e;
+}
+form {
+  padding: 20px;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+a[href]
+{
+	color: black;
+}
+
+label {
+	display: block;
+	width: 7em;
+	float: left;
+}
+
+
+.button1 {
+
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #022e31;
+  border: none;
+  
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 50px;
+  color: white;
+  text-decoration: inherit;
+  margin-right: 130px;
+}
+.button1:hover{
+	background-color: rgb(64, 128, 128);
+
+}
+
+
+
+
