@@ -13,3 +13,5 @@ With this application, you can:
 - edit a drink from your database
 - search for drinks in your database through a search bar
 - sort your database base on name or id 
+
+Rigth now most of the code and its variables and comments are in Finnish, but translating them is on the todo list ! 
