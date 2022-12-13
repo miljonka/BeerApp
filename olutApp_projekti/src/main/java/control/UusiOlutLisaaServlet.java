@@ -20,7 +20,7 @@ public class UusiOlutLisaaServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		request.getRequestDispatcher("/WEB-INF/oluenlisayslomake.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/oluenlisayslomake.jsp").forward(request, response);  //pyydetään lisäyslomaketta
 }
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 
@@ -34,27 +34,17 @@ public class UusiOlutLisaaServlet extends HttpServlet {
 		String prosentitStr = request.getParameter("prosentit");
 		String arvosanaStr = request.getParameter("arvosana");
 		
-		// korvataan pilkut pisteillä
-		if (prosentitStr.contains(",")){
-			prosentitStr = prosentitStr.replace(",", ".");
-		}
-		if (arvosanaStr.contains(",")) {
-			arvosanaStr = arvosanaStr.replace(",", ".");
-		}
-		prosentitStr = prosentitStr.replaceAll("[^\\d.]", "");
-		arvosanaStr = arvosanaStr.replaceAll("[^\\d.]", "");
-		
+		//Stringit numeroiksi
 		double prosentit = Double.parseDouble(prosentitStr);
 		double arvosana = Double.parseDouble(arvosanaStr);
 		
-		
-		
+		//luodaan uus olut olio
 		Olut olut = new Olut(nimi, maa, tyyppi, prosentit, arvosana);
 		System.out.println("Olut: " + olut.toString());
 		
 		OlutDao olutdao = new OlutJdbcDao();
 		
-		boolean lisaysOnnistui = olutdao.addOlut(olut);
+		boolean lisaysOnnistui = olutdao.addOlut(olut); //lisätään olut listaan
 		if(lisaysOnnistui)
 			response.sendRedirect("/listaa-oluet");
 		else {
