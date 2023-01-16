@@ -12,7 +12,7 @@ With this application, you can:
 - delete a drink from your database
 - edit a drink from your database
 - search for drinks in your database through a search bar
-- sort your database base on name or id 
+- sort your database based on name or id 
 
 Rigth now most of the code and its variables and comments are in Finnish, but translating them is on the todo list ! 
 
