@@ -14,7 +14,7 @@ With this application, you can:
 - search for drinks in your database through a search bar
 - sort your database based on name or id 
 
-Rigth now most of the code and its variables and comments are in Finnish, but translating them is on the todo list ! 
+
 
 ![kuva](https://user-images.githubusercontent.com/112076418/208311680-7f311d93-5a8b-4c12-9ac6-7515e76ba1d2.png)
 
