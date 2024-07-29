@@ -148,7 +148,7 @@ public class OlutJdbcDao implements OlutDao {
 	
 			try {
 				yhteys = Database.getDBConnection();
-				//Vertaa syötettyä oluen nimeä tietokantaan hakusanalla, riittää että hakusana on löytyy nimestä
+				//Vertaa syötettyä oluen nimeä tietokantaan hakusanalla, riittää että hakusana löytyy nimestä
 				String sqlLause = "SELECT olut_id, olutNimi, maa, olutTyyppi, olutProsentit, olutArvosana FROM oluet WHERE olutNimi LIKE ?";
 				stmtFind = yhteys.prepareStatement(sqlLause);
 				stmtFind.setString(1, "%" + nimi + "%");  // haettu sana pitää olla muodossa "%?%"
